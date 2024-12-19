@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -80,7 +81,6 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: rgb(250, 19, 19);
     transition: 0.8s;
 }
 
@@ -214,9 +214,36 @@ h2 {
     align-items: center;
 }
 
+.contacto{
+    li, a{
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+        text-decoration: none;
+        color: white;
+    }
+}
+
 .Rd ul{
     display: flex;
     flex-direction: column;
+
+    li, a{
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    a:hover {
+        color: rgb(22, 22, 22);
+        background-color: rgb(240, 240, 241);
+        padding: 1rem;
+        border-radius: 10px;
+        
+        
+    }    
+
 }
 
 /* Footer */
@@ -240,6 +267,9 @@ h4 {
     
     
 }
+.foot{
+    color: white;
+}
 
 a {
     transition: 0.8s;
@@ -249,15 +279,18 @@ a {
 }
 
 a:hover {
-    color: rgb(216, 16, 16);
+    color: rgb(22, 22, 22);
     background-color: rgb(240, 240, 241);
     padding: 1rem;
     border-radius: 10px;
+    
+    
 }
 
 .Rd ul li a{
     display: flex;
     justify-content: space-around;
+    
 }
 
 /* Pie de página */
@@ -265,14 +298,14 @@ a:hover {
     
     color: white;
     margin-top: 20px;
-    border-top: 1px solid #3812c2;
+    border-top: 1px solid #ffffff;
     padding-top: 10px;
     font-size: large;
     text-align: center;
 }
 
 body{
-    background-image: url(/assets/img/pexels-ekaterina-bolovtsova-6077123.jpg);
+    background-image: url(/assets/img/Fondo.jpg); 
     background-position: center center;
     background-attachment: unset;
     background-repeat: no-repeat;
